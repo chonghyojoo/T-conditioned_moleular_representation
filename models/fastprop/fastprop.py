@@ -1,4 +1,5 @@
-# models/fastprop/fastprop_csv_baseline.py
+# Origianl architecture can be found in GitHub:
+# https://github.com/jacksonburns/fastprop
 import torch
 import torch.nn as nn
 from types import SimpleNamespace
