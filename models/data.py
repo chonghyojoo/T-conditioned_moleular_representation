@@ -2,7 +2,6 @@ import csv
 from memory_profiler import profile
 import numpy as np
 import torch
-# from features.calculated_features import morgan_fingerprint
 from rdkit import Chem
 from rdkit.Chem.Scaffolds import MurckoScaffold
 from rdkit.Chem import Lipinski
