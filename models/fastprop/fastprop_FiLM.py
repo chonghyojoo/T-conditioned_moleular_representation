@@ -1,4 +1,3 @@
-# models/fastprop/fastprop_csv_film.py
 import torch
 import torch.nn as nn
 from types import SimpleNamespace
