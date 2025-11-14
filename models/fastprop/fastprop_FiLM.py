@@ -54,7 +54,7 @@ class FastProp_FiLM(nn.Module):
         self.input_act   = str(hopt_params["input_activation"]).lower()
 
         in_size = self.fp_solu_dim
-        # input activation 
+
         if self.input_act == "clamp3":
             self.input_activation = ClampN(n=3.0)
         elif self.input_act == "sigmoid":
@@ -64,7 +64,7 @@ class FastProp_FiLM(nn.Module):
         self.temp_embed_dim = in_size
 
         acts = {"relu": nn.ReLU, "leakyrelu": nn.LeakyReLU, "tanh": nn.Tanh, "sigmoid": nn.Sigmoid}
-        # temperature embedding + FiLM
+
         self.temp_emb   = _TempRBF(centers=16, t_min=248.2, t_max=403.15, proj_dim=temp_embed_dim)
         self.film_layer = _FiLM(in_dim=in_size, cond_dim=temp_embed_dim)
 
@@ -94,5 +94,5 @@ class FastProp_FiLM(nn.Module):
         h1 = self.h1(x0) 
         h = self.rest(h1) 
 
-        y  = self.out(h)                                 # readout
+        y  = self.out(h)                            
         return y
