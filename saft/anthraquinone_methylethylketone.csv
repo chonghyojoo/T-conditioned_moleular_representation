@@ -1,0 +1,6 @@
+﻿solute_smiles,solvent_smiles,temperature,logS
+O=C1c2ccccc2C(=O)c3ccccc13,CCC(=O)C,298,-2.222645
+O=C1c2ccccc2C(=O)c3ccccc13,CCC(=O)C,303,-2.165643
+O=C1c2ccccc2C(=O)c3ccccc13,CCC(=O)C,308,-2.086016
+O=C1c2ccccc2C(=O)c3ccccc13,CCC(=O)C,313,-2.024647
+C1=CC=C2C(=C1)C(=O)C3=CC=CC=C3C2=O,CCC(=O)C,318,-1.967306
