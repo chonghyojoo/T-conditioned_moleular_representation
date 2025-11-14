@@ -26,6 +26,9 @@ def get_mol_list(row):
         mols.append(row['solvent_mol'])
     return mols
 
+# Prepare datasets from GitHub:
+# https://github.com/JacksonBurns/fastsolv/tree/main/paper
+
 # %% data preprocessing
 data_path = f'../../data/krasnov/solute/bigsoldb_chemprop_nonaq.csv' 
 
